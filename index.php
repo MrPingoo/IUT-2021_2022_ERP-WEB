@@ -1,8 +1,4 @@
 <?php
-use Firebase\JWT\JWT;
-use Firebase\JWT\JWT\Key;
-
-require_once('./vendor/autoload.php');
 // get database connection
 include_once './config/database.php';
 include_once './objects/User.php';
@@ -14,7 +10,6 @@ $db = $database->getConnection();
 
 $type = $_GET['type'];
 $data = json_decode(file_get_contents("php://input"),true);
-$publicKey = 'bGS6lzFqvvSQ8ALbOxatm7/Vk7mLQyzqaS34Q4oR1ew=';
 
 switch ($type) {
     case "Student":
