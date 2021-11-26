@@ -5,7 +5,7 @@ class Database{
     private $host = "localhost:3306";
     private $db_name = "db_108";
     private $username = "db_108";
-    private $password = "Mubuntu$108";
+    private $password = "password";
     public $conn;
 
     public function getConnection(){
