@@ -4,6 +4,7 @@ include_once './config/database.php';
 include_once './objects/User.php';
 include_once './objects/Student.php';
 include_once './objects/Slot.php';
+include_once './objects/Lvl.php';
 
 $database = new Database();
 $db = $database->getConnection();
